@@ -195,6 +195,14 @@
     <Compile Include="Migrations\202006070810353_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>202006070810353_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006070911209_AddNameColumnToMembershipTable.cs" />
+    <Compile Include="Migrations\202006070911209_AddNameColumnToMembershipTable.Designer.cs">
+      <DependentUpon>202006070911209_AddNameColumnToMembershipTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006070912419_UpdateNameFieldInMembershipTypeTable.cs" />
+    <Compile Include="Migrations\202006070912419_UpdateNameFieldInMembershipTypeTable.Designer.cs">
+      <DependentUpon>202006070912419_UpdateNameFieldInMembershipTypeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -300,6 +308,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006070810353_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>202006070810353_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070911209_AddNameColumnToMembershipTable.resx">
+      <DependentUpon>202006070911209_AddNameColumnToMembershipTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070912419_UpdateNameFieldInMembershipTypeTable.resx">
+      <DependentUpon>202006070912419_UpdateNameFieldInMembershipTypeTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
