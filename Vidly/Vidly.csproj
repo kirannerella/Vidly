@@ -219,9 +219,26 @@
     <Compile Include="Migrations\202006070932019_SetBirthDateColumnInCustomersTableToNullable.Designer.cs">
       <DependentUpon>202006070932019_SetBirthDateColumnInCustomersTableToNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006070947079_AddedMoviesTable.cs" />
+    <Compile Include="Migrations\202006070947079_AddedMoviesTable.Designer.cs">
+      <DependentUpon>202006070947079_AddedMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006070949426_AddedGenresTable.cs" />
+    <Compile Include="Migrations\202006070949426_AddedGenresTable.Designer.cs">
+      <DependentUpon>202006070949426_AddedGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006070950015_PopulateGenresTable.cs" />
+    <Compile Include="Migrations\202006070950015_PopulateGenresTable.Designer.cs">
+      <DependentUpon>202006070950015_PopulateGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006071004315_AddedRequiredFieldsToMoviesTable.cs" />
+    <Compile Include="Migrations\202006071004315_AddedRequiredFieldsToMoviesTable.Designer.cs">
+      <DependentUpon>202006071004315_AddedRequiredFieldsToMoviesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -292,6 +309,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -342,6 +360,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006070932019_SetBirthDateColumnInCustomersTableToNullable.resx">
       <DependentUpon>202006070932019_SetBirthDateColumnInCustomersTableToNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070947079_AddedMoviesTable.resx">
+      <DependentUpon>202006070947079_AddedMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070949426_AddedGenresTable.resx">
+      <DependentUpon>202006070949426_AddedGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070950015_PopulateGenresTable.resx">
+      <DependentUpon>202006070950015_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006071004315_AddedRequiredFieldsToMoviesTable.resx">
+      <DependentUpon>202006071004315_AddedRequiredFieldsToMoviesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
