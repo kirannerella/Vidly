@@ -203,6 +203,22 @@
     <Compile Include="Migrations\202006070912419_UpdateNameFieldInMembershipTypeTable.Designer.cs">
       <DependentUpon>202006070912419_UpdateNameFieldInMembershipTypeTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006070919442_AddBithDateColumnToCustomersTable.cs" />
+    <Compile Include="Migrations\202006070919442_AddBithDateColumnToCustomersTable.Designer.cs">
+      <DependentUpon>202006070919442_AddBithDateColumnToCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006070925232_AddBithDateColumnToCustomersTable1.cs" />
+    <Compile Include="Migrations\202006070925232_AddBithDateColumnToCustomersTable1.Designer.cs">
+      <DependentUpon>202006070925232_AddBithDateColumnToCustomersTable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006070926482_AddBithDateColumnToCustomersTable2.cs" />
+    <Compile Include="Migrations\202006070926482_AddBithDateColumnToCustomersTable2.Designer.cs">
+      <DependentUpon>202006070926482_AddBithDateColumnToCustomersTable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006070932019_SetBirthDateColumnInCustomersTableToNullable.cs" />
+    <Compile Include="Migrations\202006070932019_SetBirthDateColumnInCustomersTableToNullable.Designer.cs">
+      <DependentUpon>202006070932019_SetBirthDateColumnInCustomersTableToNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -314,6 +330,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006070912419_UpdateNameFieldInMembershipTypeTable.resx">
       <DependentUpon>202006070912419_UpdateNameFieldInMembershipTypeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070919442_AddBithDateColumnToCustomersTable.resx">
+      <DependentUpon>202006070919442_AddBithDateColumnToCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070925232_AddBithDateColumnToCustomersTable1.resx">
+      <DependentUpon>202006070925232_AddBithDateColumnToCustomersTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070926482_AddBithDateColumnToCustomersTable2.resx">
+      <DependentUpon>202006070926482_AddBithDateColumnToCustomersTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006070932019_SetBirthDateColumnInCustomersTableToNullable.resx">
+      <DependentUpon>202006070932019_SetBirthDateColumnInCustomersTableToNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
