@@ -235,6 +235,14 @@
     <Compile Include="Migrations\202006071004315_AddedRequiredFieldsToMoviesTable.Designer.cs">
       <DependentUpon>202006071004315_AddedRequiredFieldsToMoviesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006081225391_ChangedIdDataTypeInGenresTable.cs" />
+    <Compile Include="Migrations\202006081225391_ChangedIdDataTypeInGenresTable.Designer.cs">
+      <DependentUpon>202006081225391_ChangedIdDataTypeInGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006081227073_AddedGenreIdColumnToMoviesTable.cs" />
+    <Compile Include="Migrations\202006081227073_AddedGenreIdColumnToMoviesTable.Designer.cs">
+      <DependentUpon>202006081227073_AddedGenreIdColumnToMoviesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -246,6 +254,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MoviesFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -312,6 +321,7 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -374,6 +384,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006071004315_AddedRequiredFieldsToMoviesTable.resx">
       <DependentUpon>202006071004315_AddedRequiredFieldsToMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006081225391_ChangedIdDataTypeInGenresTable.resx">
+      <DependentUpon>202006081225391_ChangedIdDataTypeInGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006081227073_AddedGenreIdColumnToMoviesTable.resx">
+      <DependentUpon>202006081227073_AddedGenreIdColumnToMoviesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
