@@ -10,7 +10,7 @@
 
 @if (Model.Count() != 0)
 {
-<table class="table table-bordered table-hover">
+<table id="customers" class="table table-bordered table-hover">
     <thead>
         <tr>
             <th>
@@ -18,6 +18,9 @@
             </th>
             <th>
                 Membership Type
+            </th>
+            <th>
+                Delete
             </th>
         </tr>
     </thead>
@@ -32,6 +35,9 @@
                 <td>
                    @customer.MembershipType.Name
                 </td>
+                <td>
+                    <button data-customer-id="@customer.Id" class="btn-link js-delete">Delete</button>
+                </td>
             </tr>
         }
     </tbody>
@@ -42,3 +48,26 @@ else if (Model.Count() == 0)
 {
     <p>We dont have any customers</p>
 }
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('#customers').DataTable();
+            $("#customers").on("click", ".js-delete", function () {
+                var button = $(this);
+                bootbox.confirm("Are you sure you want to Delete the customer", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: "/api/customers/" + button.attr("data-customer-id"),
+                            method: "DELETE",
+                            success: function () {
+                                button.parents("tr").remove();
+                            }
+                        });
+                    }
+                })
+            });
+        });
+    </script>
+    }
